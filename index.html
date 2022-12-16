@@ -4,33 +4,46 @@
 <head>
     <title>Ryan Mendoza</title>
     <!--<style>
-        body {
-            font-family: sans-serif;
-        }
+            body {
+                font-family: sans-serif;
+            }
 
-        .container {
-            width: 800px;
-            margin: 0 auto;
-        }
+            .container {
+                width: 800px;
+                margin: 0 auto;
+            }
 
-        h1, h2, h3 {
-            text-align: center;
-        }
+            h1, h2, h3 {
+                text-align: center;
+            }
 
-        .project {
-            margin-bottom: 40px;
-        }
+            .project {
+                margin-bottom: 40px;
+                display: flex;
+            }
 
-        .project-image {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
+            .project-image {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
 
-        .project-description {
-            text-align: center;
-        }
-    </style>-->
+            .project-description {
+                text-align: center;
+            }
+
+            .project-image-container {
+                flex: 1;
+            }
+
+            .project-info-container {
+                flex: 2;
+            }
+
+            .project-title {
+                margin-bottom: 20px;
+            }
+        </style>-->
 </head>
 
 <body>
@@ -39,28 +52,43 @@
         <h2>Projects</h2>
 
         <div class="project">
-            <a href="https://jdubo1998.itch.io/spacefist" class="project-text-link">
-                <h3>SpaceFist</h3>
-            </a>
+            <div class="project-image-container">
+                <a href="https://jdubo1998.itch.io/spacefist" class="project-image-link">
+                    <img src="images/spacefist.gif" class="project-image">
+                </a>
+            </div>
 
-            <a href="https://jdubo1998.itch.io/spacefist" class="project-image-link">
-                <img src="images/spacefist.gif" class="project-image">
-            </a>
-            
-            <p class="project-description">
-                SpaceFist is a 2D fighting game with a fusion of platform fighter gameplay and sumo wrestling rules.
-                I worked as a technical game designer in a team of seven for my Game Development class at Texas A&amp;M.
-                I was personally responsible for designing the movesets and unique mechanics of each character and 
-                implementing the movement and knockback systems in a manner that is scalable for new moves and characters.
-            </p>
+            <div class="project-info-container">
+                <a href="https://jdubo1998.itch.io/spacefist" class="project-text-link">
+                    <h3 class="project-title">SpaceFist</h3>
+                </a>
+
+                <p class="project-description">
+                    SpaceFist is a 2D fighting game with a fusion of platform fighter gameplay and sumo wrestling rules.
+                    This was a semester long project for my Game Development class at Texas A&amp;M as part of a team of seven.
+                    As a technical game designer, I was personally responsible for designing the movesets and unique mechanics
+                    of each character and implementing the movement and knockback systems in a manner that is scalable for new
+                    moves and characters.
+                </p>
+            </div>
         </div>
 
         <div class="project">
-            <h3>Painta and the Slime Mix-Up</h3>
-            <img src="project2-image.jpg" class="project-image">
-            <p class="project-description">
-                Description of Project 2 goes here. https://ameliarmccarthy.itch.io/painta-and-the-slime-mix-up
-            </p>
+            <div class="project-image-container">
+                <a href="https://ameliarmccarthy.itch.io/painta-and-the-slime-mix-up" class="project-image-link">
+                    <img src="images/painta.png" class="project-image">
+                </a>
+            </div>
+
+            <div class="project-info-container">
+                <a href="https://ameliarmccarthy.itch.io/painta-and-the-slime-mix-up" class="project-text-link">
+                    <h3 class="project-title">Painta and the Slime Mix-Up</h3>
+                </a>
+
+                <p class="project-description">
+                    Painta and the Slime Mix-Up is a top-down shooter 
+                </p>
+            </div>
         </div>
     </div>
 </body>
