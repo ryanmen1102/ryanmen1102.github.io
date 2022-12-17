@@ -3,6 +3,7 @@
     background: linear-gradient(to top, #172f4e 0%, #050f1d 100%);
     min-height: 100vh;
     margin: 0px;
+    font-size: 20px;
 }
 
 .container {
@@ -12,14 +13,26 @@
     padding: 20px;
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.45;
     color: #cccccc;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
 h3 {
+    font-size: 2em;
     margin-top: 0px;
-    font-size: 30px;
 }
 
 .project {
@@ -30,6 +43,8 @@ h3 {
 .project-image-container {
     flex: 1;
     margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
     max-width: 500px;
 }
 
@@ -51,7 +66,6 @@ h3 {
 
 .project-description {
     text-align: justify;
-    color: #cccccc;
 }
 
 
