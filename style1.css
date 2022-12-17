@@ -10,11 +10,16 @@
     max-width: 1500px;
     margin: 20px auto;
     background: #323943;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.header-container {
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    line-height: 1.45;
+    line-height: 1.7;
     color: #cccccc;
 }
 
@@ -24,6 +29,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 4em;
+    margin-top: 10px;
 }
 
 h2 {
@@ -33,6 +39,11 @@ h2 {
 h3 {
     font-size: 2em;
     margin-top: 0px;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 0px auto;
 }
 
 .project {
@@ -46,6 +57,7 @@ h3 {
     margin-top: auto;
     margin-bottom: auto;
     max-width: 500px;
+    position: relative;
 }
 
 .project-info-container {
@@ -62,10 +74,48 @@ h3 {
     width: 100%;
     height: auto;
     border: 3px solid black;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.itch-overlay {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    bottom: 25%;
+    left: 25%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.project-image-container:hover .project-image {
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.project-image-container:hover .itch-overlay {
+    opacity: 1;
 }
 
 .project-description {
     text-align: justify;
 }
 
+.project-text-link:link, .project-text-link:visited {
+    color: #cccccc
+}
 
+.contact-container {
+    margin: auto;
+    background: #111111;
+    padding: 20px;
+}
+
+.contact-text {
+    margin: auto;
+    text-align: center;
+}
+
+.email-link:link {
+    color: #cccccc;
+}
